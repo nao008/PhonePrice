@@ -9,6 +9,6 @@
 * python3 3.10.9
 
 ## フォルダ構成
->├ data/
->    ├ train.csv
+>├ data/  
+>    ├ train.csv  
 >    …
