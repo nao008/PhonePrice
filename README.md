@@ -2,8 +2,8 @@
 ---
 ## データ
 >├ data/  
->    ├ train.csv	-学習用データ  
->    ├ test.csv		-検証用データ  
+>　　├ train.csv	-学習用データ  
+>　　├ test.csv		-検証用データ  
 
 ## 環境構築
 * python3 3.10.9
