@@ -1,3 +1,38 @@
+<<<<<<< HEAD
+import os
+import datetime
+import pandas as pd
+
+from preprocessor.preprocess import DataCleansing
+from predictor.LGBM_chatGPT import LightGBMClassifier as LGBM
+
+from evaluator.evaluate import Output
+
+def main():
+     #初期データの準備
+     train_df = pd.read_csv("./data/official_data/train.csv",index_col=0)
+     test_df = pd.read_csv("./data/official_data/test.csv",index_col=0)
+     
+     #インスタンス生成
+     pp = DataCleansing(train_df)
+     lgbm = LGBM()
+     
+     X,y = pp.rt_train_data()
+     
+     #データ分割
+     X_train, X_test, y_train, y_test = pp.train_split()
+
+     # モデルの構築と学習
+     lgbm.fit(X_train,y_train)
+     lgbm_submit = lgbm.load_model(test_df)
+     
+     #submitに出力
+     Output.submit(lgbm_submit, "recent")
+
+
+if __name__ == "__main__":
+     main()
+=======
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import datetime
@@ -39,3 +74,4 @@ def mein():
 
 if __name__ == "__mein__":
      mein()
+>>>>>>> refs/remotes/master/master

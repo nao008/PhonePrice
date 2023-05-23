@@ -6,11 +6,19 @@ directory = os.getcwd()
 # directory = os.path.dirname(directory)
 
 class DataCleansing():
+<<<<<<< HEAD
+     def __init__(self,original_df=pd.read_csv(f"{directory}/data/official_data/train.csv",index_col=0)):#trainデータを取得
+          self.original_x = original_df.drop(['price_range'],axis=1)
+          self.original_y = original_df["price_range"]
+          
+     def rt_train_data(self):#traindataを目的変数を分けて取得
+=======
      def __init__(self,original_df=pd.read_csv(f"{directory}/data/train.csv",index_col=0)):#trainデータを取得
           self.original_x = original_df.drop(['price_range'],axis=1)
           self.original_y = original_df["price_range"]
           
      def rt_train_data(self):
+>>>>>>> refs/remotes/master/master
           x = self.original_x
           y = self.original_y
           return x, y

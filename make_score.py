@@ -1,6 +1,10 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+<<<<<<< HEAD
+from preprocessor.preprocess import DataCleansing
+=======
 from preprocess.preprocess import DataCleansing
+>>>>>>> refs/remotes/master/master
 import os
 
 

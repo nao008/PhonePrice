@@ -2,3 +2,6 @@
 /trajectory.txt
 /ignore_pyfiles/
 /submits/
+/result/
+/make_score.py
+/*/__pycache__/
