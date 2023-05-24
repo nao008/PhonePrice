@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import lightgbm as lgb
 import optuna
-import math
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import make_scorer

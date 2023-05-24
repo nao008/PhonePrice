@@ -11,16 +11,16 @@
 ## フォルダ構成
 >├ data/  
 >　　├ train.csv  
->    …  
+>　　…  
 >├ preprocess/  
 >　　├ preprocess.py  
 >　　…  
->├ train/
+>├ train/  
 >　　├  
 >　　…  
 >├ model/  
 >　　├  
 >　　…  
->├ predict/
+>├ predict/  
 >　　├  
 >　　…
