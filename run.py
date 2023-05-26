@@ -30,7 +30,6 @@ def main():
      
      config = parse_args()
      setting_dict = read_config(os.path.join("config",config.path),config.name)
-     print("#######################################")
      models = {
           "lgbm": LGBM
      }
