@@ -45,7 +45,7 @@ class LightGBMClassifier:
         #モデル保存
         with open("results/model/LGBMcat_model.pkl","wb") as f:
              pickle.dump(self.model,f)
-        print("#################################################")     
+        print("#################################################")
         print("model created!")
         print("#################################################")
     
@@ -58,9 +58,9 @@ class LightGBMClassifier:
     def load_model(self,x_test):
            # モデルの読み込み
           with open("results/model/LGBMcat_model.pkl", "rb") as f:
-               model = pickle.load(f)
-               
+            model = pickle.load(f)
+
           if self.model is None:
               raise RuntimeError("Model is not trained. Fit the model first.")
-          preds = model.predict(x_test)     
+          preds = model.predict(x_test)
           return pd.DataFrame(preds, index=x_test.index, columns=['prediction'])

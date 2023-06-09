@@ -4,7 +4,7 @@ import numpy as np
 
 
 
-class Output():     
+class Output():
      def make_score_rmse(y_predict:pd.DataFrame, y_test:pd.DataFrame) -> float:
           result = pd.concat([y_predict, y_test],axis=1)
           rmse_score = np.sqrt(mse(result['prediction'],result['cover']))
